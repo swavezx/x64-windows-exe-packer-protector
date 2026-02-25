@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8d92441a-b252-44ed-8754-91fc62c6fd53}</ProjectGuid>
+    <RootNamespace>Virtualizer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Obscura</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)core\externals;$(ProjectDir)core;$(ProjectDir);C:\Users\x90\source\repos\Obscura\Obscura\core\externals\LIEF\include\LIEF;C:\Users\x90\source\repos\Obscura\Obscura\core\externals\LIEF\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>LIEF.lib;keystone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\x90\source\repos\Obscura\Obscura\core\externals\LIEF\lib;C:\Users\x90\source\repos\Obscura\Obscura\externals\Keystone\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)core\externals;$(ProjectDir)core;$(ProjectDir);C:\Users\x90\source\repos\Obscura\Obscura\core\externals\LIEF\include\LIEF;C:\Users\x90\source\repos\Obscura\Obscura\core\externals\LIEF\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>LIEF.lib;keystone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\x90\source\repos\Obscura\Obscura\core\externals\LIEF\lib;C:\Users\x90\source\repos\Obscura\Obscura\core\externals\Keystone\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core\entry.cpp" />
+    <ClCompile Include="core\Mutation_Engine\Engine.cpp" />
+    <ClCompile Include="core\stub\stub.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\Binary\include.h" />
+    <ClInclude Include="core\Ctf\ctf.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\arm.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\arm64.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\evm.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\hexagon.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\keystone.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\mips.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\ppc.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\sparc.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\systemz.h" />
+    <ClInclude Include="core\externals\Keystone\include\keystone\x86.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Binary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\DebugInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Function.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Relocation.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Section.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Symbol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\EnumToString.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\File.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\java_structures.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\types.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ASM.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\opcodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\Operand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\Immediate.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\Memory.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\PCRelative.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\Register.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\registers.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm\opcodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm\registers.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\AssemblerConfig.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf\opcodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf\registers.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\Engine.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips\opcodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips\registers.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc\opcodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc\registers.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv\opcodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv\registers.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\Instruction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\opcodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\Operand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\Immediate.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\Memory.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\PCRelative.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\Register.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\registers.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\ASN1Reader.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\BinaryStream.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\FileStream.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\MemoryStream.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\SpanStream.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\VectorStream.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\canbe_unique.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarybfAndefSymbol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryCLRToken.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFile.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFunctionDefinition.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarySectionDefinition.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryWeakExternal.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\BigObjHeader.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Binary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\ParserConfig.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\RegularHeader.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Relocation.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Section.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\String.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Symbol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\compiler_attributes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\config.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\debug_loc.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Class.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\CodeInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\deopt.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\EnumToString.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Field.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\File.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\instructions.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\MapItem.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\MapList.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Method.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Prototype.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Type.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\types.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\CompilationUnit.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\DebugInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Editor.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\ArrayType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\BaseType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\CompilationUnit.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\EnumType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\Function.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\FunctionType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\PointerType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\StructType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\Type.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\TypeDef.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\Variable.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Function.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Parameter.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Scope.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Type.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Array.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Atomic.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Base.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\ClassLike.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Coarray.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Const.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Dynamic.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Enum.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\File.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Immutable.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Interface.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Pointer.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\PointerToMember.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Reference.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Restrict.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\RValueRef.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\SetTy.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Shared.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\StringTy.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Subroutine.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\TemplateAlias.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Thrown.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Typedef.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Volatile.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Variable.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\caching.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\DyldSharedCache.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\Dylib.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\MappingInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\SubCache.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\uuid.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Binary.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Binary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Builder.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntry.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryArray.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryFlags.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryLibrary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryRpath.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryRunPath.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicSharedObject.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\enums.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\EnumToString.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\GnuHash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Header.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Note.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\AndroidIdent.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\Core.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreAuxv.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreFile.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrPsInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrStatus.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreSigInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\NoteAbi.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\NoteGnuProperty.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\Properties.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64Feature.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64PAuth.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Generic.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Needed.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\NoteNoCopyOnProtected.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\StackSize.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86Feature.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86ISA.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\QNXStack.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\ParserConfig.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\ProcessorFlags.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Relocation.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Section.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Section.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Segment.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Segment.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Symbol.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Symbol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersion.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionAux.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionAuxRequirement.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionDefinition.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionRequirement.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SysvHash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\utils.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\endianness_support.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\errors.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\iostream.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\iterators.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\LIEF.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\LIEF.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\logging.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\logging.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\AtomInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Binary.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Binary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BinaryParser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BindingInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BindingInfoIterator.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Builder.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BuildToolVersion.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BuildVersion.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ChainedBindingInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ChainedPointerAnalysis.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\CodeSignature.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\CodeSignatureDir.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DataCodeEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DataInCode.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldBindingInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldChainedFixups.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldChainedFixupsCreator.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldChainedFormat.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldEnvironment.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldExportsTrie.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DylibCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DylinkerCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DynamicSymbolCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\EncryptionInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\enums.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\EnumToString.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ExportInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FatBinary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FilesetCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FunctionStarts.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariantFixups.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Header.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\IndirectBindingInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LinkEdit.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LinkerOptHint.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LoadCommand.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LoadCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\MainCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\NoteCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ParserConfig.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Relocation.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RelocationDyld.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RelocationFixup.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RelocationObject.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Routine.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RPathCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Section.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Section.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Segment.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SegmentCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SegmentSplitInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SourceVersion.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Stub.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SubClient.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SubFramework.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Symbol.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Symbol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SymbolCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ThreadCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\TwoLevelHints.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\type_traits.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\UnknownCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\UUIDCommand.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\VersionMin.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Binary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Class.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\DexFile.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\EnumToString.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Method.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\type_traits.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Class.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\DeclOpt.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\IVar.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Metadata.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Method.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Property.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Protocol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Object.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\optional.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\BuildMetadata.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\CompilationUnit.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\DebugInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\Function.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\PublicSymbol.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\Type.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Array.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Attribute.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\BitField.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\ClassLike.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Enum.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Function.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Method.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Modifier.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Pointer.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Simple.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Union.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Binary.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Binary.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Builder.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\CodeIntegrity.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\CodePage.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DataDirectory.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DataDirectory.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Debug.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\CodeView.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\CodeViewPDB.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\Debug.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\ExDllCharacteristics.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\FPO.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\PDBChecksum.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\Pogo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\PogoEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\Repro.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\VCFeature.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DelayImport.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DelayImportEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DosHeader.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DosHeader.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\enums.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\enums.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\EnumToString.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\EnumToString.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ExceptionInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\PackedFunction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\UnpackedFunction.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\internal_arm64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\internal_x64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionAArch64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionX64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeAArch64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeX64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Export.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ExportEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Factory.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Header.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Import.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Import.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ImportEntry.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ImportEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\Metadata.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataARM64.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataX86.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixup.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64Kernel.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64X.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupControlTransfer.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupGeneric.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupUnknown.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationBase.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV1.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV2.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverride.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverrideInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveConfiguration.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveImport.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\LoadConfiguration.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\VolatileMetadata.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\OptionalHeader.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\OptionalHeader.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ParserConfig.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Relocation.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\RelocationEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourceData.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourceDirectory.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourceNode.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourcesManager.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\AcceleratorCodes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\langs.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceAccelerator.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceDialog.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceDialogExtended.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceDialogRegular.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceIcon.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceStringFileInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceStringTable.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceVar.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceVarFileInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceVersion.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\RichEntry.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\RichHeader.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Section.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Section.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\Attribute.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\ContentType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\GenericType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsCounterSign.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsManifestBinaryID.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcNestedSignature.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcStatementType.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9AtSequenceNumber.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9CounterSignature.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9MessageDigest.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9SigningTime.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\SigningCertificateV2.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\SpcRelaxedPeMarkerCheck.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\SpcSpOpusInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\ContentInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\GenericContent.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\OIDToString.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\PKCS9TSTInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\RsaInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\Signature.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\SignatureParser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\SignerInfo.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\SpcIndirectData.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\types.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\x509.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\TLS.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\platforms.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\platforms\android.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\platforms\android\version.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\range.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\span.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\expected.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\internal\expected.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\internal\span.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\span.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\to_json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\types.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\types.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\File.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\hash.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\Header.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\json.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\Parser.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\type_traits.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\utils.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\version.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\visibility.h" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Visitor.hpp" />
+    <ClInclude Include="core\externals\LIEF\include\LIEF\visitor_macros.hpp" />
+    <ClInclude Include="core\externals\Zydis\Decoder.h" />
+    <ClInclude Include="core\externals\Zydis\DecoderTypes.h" />
+    <ClInclude Include="core\externals\Zydis\Defines.h" />
+    <ClInclude Include="core\externals\Zydis\Disassembler.h" />
+    <ClInclude Include="core\externals\Zydis\Encoder.h" />
+    <ClInclude Include="core\externals\Zydis\Formatter.h" />
+    <ClInclude Include="core\externals\Zydis\FormatterBuffer.h" />
+    <ClInclude Include="core\externals\Zydis\Generated\EnumInstructionCategory.h" />
+    <ClInclude Include="core\externals\Zydis\Generated\EnumISAExt.h" />
+    <ClInclude Include="core\externals\Zydis\Generated\EnumISASet.h" />
+    <ClInclude Include="core\externals\Zydis\Generated\EnumMnemonic.h" />
+    <ClInclude Include="core\externals\Zydis\Generated\EnumRegister.h" />
+    <ClInclude Include="core\externals\Zydis\Internal\DecoderData.h" />
+    <ClInclude Include="core\externals\Zydis\Internal\EncoderData.h" />
+    <ClInclude Include="core\externals\Zydis\Internal\FormatterATT.h" />
+    <ClInclude Include="core\externals\Zydis\Internal\FormatterBase.h" />
+    <ClInclude Include="core\externals\Zydis\Internal\FormatterIntel.h" />
+    <ClInclude Include="core\externals\Zydis\Internal\SharedData.h" />
+    <ClInclude Include="core\externals\Zydis\Internal\String.h" />
+    <ClInclude Include="core\externals\Zydis\MetaInfo.h" />
+    <ClInclude Include="core\externals\Zydis\Mnemonic.h" />
+    <ClInclude Include="core\externals\Zydis\Register.h" />
+    <ClInclude Include="core\externals\Zydis\Segment.h" />
+    <ClInclude Include="core\externals\Zydis\SharedTypes.h" />
+    <ClInclude Include="core\externals\Zydis\ShortString.h" />
+    <ClInclude Include="core\externals\Zydis\Status.h" />
+    <ClInclude Include="core\externals\Zydis\Utils.h" />
+    <ClInclude Include="core\externals\Zydis\Zydis.h" />
+    <ClInclude Include="core\Mutation_Engine\Engine.h" />
+    <ClInclude Include="core\stub\stub.h" />
+    <ClInclude Include="core\Utils\Animation.h" />
+    <ClInclude Include="core\Utils\Color.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\arm.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\arm64.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\evm.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\hexagon.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\keystone.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\mips.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\ppc.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\sparc.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\systemz.h" />
+    <ClInclude Include="externals\Keystone\include\keystone\x86.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Binary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\DebugInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Function.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Relocation.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Section.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Symbol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\EnumToString.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\File.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\java_structures.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\types.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ASM.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\opcodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\Operand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\Immediate.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\Memory.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\PCRelative.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\Register.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\registers.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm\opcodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm\registers.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\AssemblerConfig.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf\opcodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf\registers.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\Engine.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips\opcodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips\registers.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc\opcodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc\registers.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv\opcodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv\registers.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\Instruction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\opcodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\Operand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\Immediate.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\Memory.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\PCRelative.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\Register.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\registers.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\ASN1Reader.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\BinaryStream.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\FileStream.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\MemoryStream.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\SpanStream.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\VectorStream.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\canbe_unique.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarybfAndefSymbol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryCLRToken.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFile.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFunctionDefinition.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarySectionDefinition.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryWeakExternal.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\BigObjHeader.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Binary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\ParserConfig.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\RegularHeader.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Relocation.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Section.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\String.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Symbol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\compiler_attributes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\config.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\debug_loc.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Class.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\CodeInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\deopt.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\EnumToString.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Field.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\File.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\instructions.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\MapItem.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\MapList.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Method.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Prototype.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Type.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\types.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\CompilationUnit.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\DebugInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Editor.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\ArrayType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\BaseType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\CompilationUnit.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\EnumType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\Function.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\FunctionType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\PointerType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\StructType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\Type.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\TypeDef.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\Variable.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Function.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Parameter.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Scope.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Type.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Array.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Atomic.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Base.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\ClassLike.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Coarray.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Const.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Dynamic.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Enum.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\File.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Immutable.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Interface.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Pointer.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\PointerToMember.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Reference.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Restrict.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\RValueRef.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\SetTy.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Shared.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\StringTy.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Subroutine.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\TemplateAlias.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Thrown.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Typedef.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Volatile.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Variable.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\caching.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\DyldSharedCache.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\Dylib.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\MappingInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\SubCache.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\uuid.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Binary.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Binary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Builder.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntry.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryArray.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryFlags.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryLibrary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryRpath.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryRunPath.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicSharedObject.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\enums.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\EnumToString.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\GnuHash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Header.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Note.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\AndroidIdent.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\Core.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreAuxv.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreFile.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrPsInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrStatus.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreSigInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\NoteAbi.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\NoteGnuProperty.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\Properties.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64Feature.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64PAuth.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Generic.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Needed.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\NoteNoCopyOnProtected.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\StackSize.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86Feature.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86ISA.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\QNXStack.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\ParserConfig.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\ProcessorFlags.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Relocation.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Section.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Section.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Segment.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Segment.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Symbol.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Symbol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersion.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionAux.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionAuxRequirement.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionDefinition.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionRequirement.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SysvHash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\utils.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\endianness_support.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\errors.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\iostream.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\iterators.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\LIEF.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\LIEF.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\logging.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\logging.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\AtomInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Binary.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Binary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BinaryParser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BindingInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BindingInfoIterator.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Builder.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BuildToolVersion.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BuildVersion.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ChainedBindingInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ChainedPointerAnalysis.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\CodeSignature.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\CodeSignatureDir.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DataCodeEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DataInCode.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldBindingInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldChainedFixups.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldChainedFixupsCreator.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldChainedFormat.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldEnvironment.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldExportsTrie.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DylibCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DylinkerCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DynamicSymbolCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\EncryptionInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\enums.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\EnumToString.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ExportInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FatBinary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FilesetCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FunctionStarts.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FunctionVariantFixups.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FunctionVariants.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Header.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\IndirectBindingInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LinkEdit.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LinkerOptHint.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LoadCommand.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LoadCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\MainCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\NoteCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ParserConfig.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Relocation.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RelocationDyld.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RelocationFixup.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RelocationObject.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Routine.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RPathCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Section.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Section.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Segment.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SegmentCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SegmentSplitInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SourceVersion.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Stub.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SubClient.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SubFramework.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Symbol.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Symbol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SymbolCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ThreadCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\TwoLevelHints.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\type_traits.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\UnknownCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\UUIDCommand.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\VersionMin.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Binary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Class.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\DexFile.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\EnumToString.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Method.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\type_traits.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Class.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\DeclOpt.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\IVar.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Metadata.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Method.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Property.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Protocol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Object.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\optional.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\BuildMetadata.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\CompilationUnit.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\DebugInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\Function.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\PublicSymbol.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\Type.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Array.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Attribute.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\BitField.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\ClassLike.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Enum.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Function.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Method.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Modifier.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Pointer.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Simple.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Union.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Binary.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Binary.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Builder.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\CodeIntegrity.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\CodePage.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DataDirectory.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DataDirectory.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Debug.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\CodeView.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\CodeViewPDB.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\Debug.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\ExDllCharacteristics.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\FPO.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\PDBChecksum.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\Pogo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\PogoEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\Repro.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\VCFeature.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DelayImport.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DelayImportEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DosHeader.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DosHeader.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\enums.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\enums.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\EnumToString.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\EnumToString.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ExceptionInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\PackedFunction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\UnpackedFunction.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\internal_arm64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\internal_x64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionAArch64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionX64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeAArch64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeX64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Export.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ExportEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Factory.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Header.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Import.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Import.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ImportEntry.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ImportEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\Metadata.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataARM64.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataX86.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixup.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64Kernel.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64X.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupControlTransfer.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupGeneric.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupUnknown.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationBase.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV1.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV2.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverride.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverrideInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveConfiguration.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveImport.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\LoadConfiguration.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\VolatileMetadata.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\OptionalHeader.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\OptionalHeader.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ParserConfig.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Relocation.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\RelocationEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourceData.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourceDirectory.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourceNode.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourcesManager.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\AcceleratorCodes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\langs.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceAccelerator.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceDialog.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceDialogExtended.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceDialogRegular.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceIcon.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceStringFileInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceStringTable.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceVar.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceVarFileInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceVersion.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\RichEntry.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\RichHeader.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Section.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Section.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\Attribute.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\ContentType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\GenericType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsCounterSign.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsManifestBinaryID.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcNestedSignature.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcStatementType.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9AtSequenceNumber.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9CounterSignature.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9MessageDigest.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9SigningTime.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\SigningCertificateV2.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\SpcRelaxedPeMarkerCheck.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\SpcSpOpusInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\ContentInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\GenericContent.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\OIDToString.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\PKCS9TSTInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\RsaInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\Signature.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\SignatureParser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\SignerInfo.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\SpcIndirectData.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\types.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\x509.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\TLS.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\platforms.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\platforms\android.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\platforms\android\version.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\range.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\span.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\expected.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\internal\expected.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\internal\span.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\span.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\to_json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\types.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\types.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\File.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\hash.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\Header.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\json.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\Parser.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\type_traits.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\utils.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\version.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\visibility.h" />
+    <ClInclude Include="externals\LIEF\include\LIEF\Visitor.hpp" />
+    <ClInclude Include="externals\LIEF\include\LIEF\visitor_macros.hpp" />
+    <ClInclude Include="externals\Zydis\Decoder.h" />
+    <ClInclude Include="externals\Zydis\DecoderTypes.h" />
+    <ClInclude Include="externals\Zydis\Defines.h" />
+    <ClInclude Include="externals\Zydis\Disassembler.h" />
+    <ClInclude Include="externals\Zydis\Encoder.h" />
+    <ClInclude Include="externals\Zydis\Formatter.h" />
+    <ClInclude Include="externals\Zydis\FormatterBuffer.h" />
+    <ClInclude Include="externals\Zydis\Generated\EnumInstructionCategory.h" />
+    <ClInclude Include="externals\Zydis\Generated\EnumISAExt.h" />
+    <ClInclude Include="externals\Zydis\Generated\EnumISASet.h" />
+    <ClInclude Include="externals\Zydis\Generated\EnumMnemonic.h" />
+    <ClInclude Include="externals\Zydis\Generated\EnumRegister.h" />
+    <ClInclude Include="externals\Zydis\Internal\DecoderData.h" />
+    <ClInclude Include="externals\Zydis\Internal\EncoderData.h" />
+    <ClInclude Include="externals\Zydis\Internal\FormatterATT.h" />
+    <ClInclude Include="externals\Zydis\Internal\FormatterBase.h" />
+    <ClInclude Include="externals\Zydis\Internal\FormatterIntel.h" />
+    <ClInclude Include="externals\Zydis\Internal\SharedData.h" />
+    <ClInclude Include="externals\Zydis\Internal\String.h" />
+    <ClInclude Include="externals\Zydis\MetaInfo.h" />
+    <ClInclude Include="externals\Zydis\Mnemonic.h" />
+    <ClInclude Include="externals\Zydis\Register.h" />
+    <ClInclude Include="externals\Zydis\Segment.h" />
+    <ClInclude Include="externals\Zydis\SharedTypes.h" />
+    <ClInclude Include="externals\Zydis\ShortString.h" />
+    <ClInclude Include="externals\Zydis\Status.h" />
+    <ClInclude Include="externals\Zydis\Utils.h" />
+    <ClInclude Include="externals\Zydis\Zydis.h" />
+    <ClInclude Include="Mutation_Engine\Engine.h" />
+    <ClInclude Include="Utils\Animation.h" />
+    <ClInclude Include="Utils\Color.h" />
+    <ClInclude Include="Virtualization\Virtualization.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\externals\ctf.asm" />
+    <None Include="core\externals\Keystone\bin\keystone.dll" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\enums.inc" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\AArch64.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\ARM.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\BPF.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\Hexagon.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\i386.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\LoongArch.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\Mips.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\PowerPC.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\PowerPC64.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\RISCV.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\SH4.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\Sparc.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\SystemZ.def" />
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\x86_64.def" />
+    <None Include="core\externals\LIEF\include\LIEF\MachO\enums.inc" />
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\Arm64.def" />
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\PerProcess.def" />
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\SystemWide.def" />
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\X86_64.def" />
+    <None Include="core\externals\LIEF\include\LIEF\PE\enums.inc" />
+    <None Include="core\externals\LIEF\lib\LIEF.dll" />
+    <None Include="externals\ctf.asm" />
+    <None Include="externals\LIEF\include\LIEF\ELF\enums.inc" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\AArch64.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\ARM.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\BPF.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\Hexagon.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\i386.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\LoongArch.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\Mips.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\PowerPC.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\PowerPC64.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\RISCV.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\SH4.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\Sparc.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\SystemZ.def" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\x86_64.def" />
+    <None Include="externals\LIEF\include\LIEF\MachO\enums.inc" />
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\Arm64.def" />
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\PerProcess.def" />
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\SystemWide.def" />
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\X86_64.def" />
+    <None Include="externals\LIEF\include\LIEF\PE\enums.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="core\externals\Keystone\bin\keystone.lib" />
+    <Library Include="core\externals\LIEF\lib\LIEF.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

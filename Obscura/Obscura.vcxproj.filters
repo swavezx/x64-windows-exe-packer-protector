@@ -1,0 +1,3465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\entry.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Mutation_Engine\Engine.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Virtualization\Virtualization.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutation_Engine\Engine.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="core\stub\stub.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\externals\Keystone\include\keystone\arm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\arm64.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\evm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\hexagon.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\keystone.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\mips.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\ppc.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\sparc.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\systemz.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Keystone\include\keystone\x86.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\DebugInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\java_structures.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\Immediate.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\Memory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\PCRelative.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands\Register.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\Operand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\operands.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\Immediate.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\Memory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\PCRelative.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands\Register.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\Operand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\operands.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\aarch64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\arm.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\AssemblerConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\ebpf.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\Engine.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\mips.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\powerpc.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\riscv.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\asm\x86.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\ASN1Reader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\BinaryStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\FileStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\MemoryStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\SpanStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\BinaryStream\VectorStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarybfAndefSymbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryCLRToken.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFunctionDefinition.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarySectionDefinition.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryWeakExternal.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\AuxiliarySymbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\BigObjHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\RegularHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\String.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Class.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\CodeInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\deopt.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Field.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\instructions.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\MapItem.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\MapList.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Prototype.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\ArrayType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\BaseType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\CompilationUnit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\EnumType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\FunctionType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\PointerType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\StructType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\TypeDef.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\editor\Variable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Array.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Atomic.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Base.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\ClassLike.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Coarray.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Const.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Dynamic.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Enum.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Immutable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Interface.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Pointer.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\PointerToMember.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Reference.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Restrict.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\RValueRef.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\SetTy.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Shared.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\StringTy.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Subroutine.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\TemplateAlias.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Thrown.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Typedef.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types\Volatile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\CompilationUnit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\DebugInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Editor.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Parameter.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Scope.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF\Variable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\caching.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\DyldSharedCache.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\Dylib.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\MappingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\SubCache.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache\uuid.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreAuxv.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreFile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrPsInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrStatus.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreSigInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64Feature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64PAuth.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Generic.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Needed.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\NoteNoCopyOnProtected.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\StackSize.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86Feature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86ISA.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\AndroidIdent.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\Core.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\NoteAbi.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\NoteGnuProperty.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\Properties.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails\QNXStack.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Binary.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Builder.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntry.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryArray.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryFlags.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryLibrary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryRpath.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicEntryRunPath.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\DynamicSharedObject.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\enums.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\GnuHash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Note.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\NoteDetails.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\ProcessorFlags.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Section.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Segment.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Segment.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Symbol.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionAux.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionAuxRequirement.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionDefinition.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SymbolVersionRequirement.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\SysvHash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\utils.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\AtomInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Binary.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BinaryParser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BindingInfoIterator.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Builder.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BuildToolVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\BuildVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ChainedBindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ChainedPointerAnalysis.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\CodeSignature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\CodeSignatureDir.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DataCodeEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DataInCode.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldBindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldChainedFixups.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldChainedFixupsCreator.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldChainedFormat.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldEnvironment.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldExportsTrie.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DyldInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DylibCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DylinkerCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\DynamicSymbolCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\EncryptionInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\enums.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ExportInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FatBinary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FilesetCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FunctionStarts.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariantFixups.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\IndirectBindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LinkEdit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LinkerOptHint.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LoadCommand.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\LoadCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\MainCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\NoteCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RelocationDyld.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RelocationFixup.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RelocationObject.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Routine.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\RPathCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Section.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Segment.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SegmentCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SegmentSplitInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SourceVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Stub.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SubClient.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SubFramework.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Symbol.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\SymbolCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\ThreadCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\TwoLevelHints.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\type_traits.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\UnknownCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\UUIDCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO\VersionMin.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Class.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\DexFile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\type_traits.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Class.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\DeclOpt.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\IVar.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Metadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Property.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC\Protocol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Array.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Attribute.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\BitField.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\ClassLike.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Enum.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Modifier.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Pointer.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Simple.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types\Union.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\BuildMetadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\CompilationUnit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\DebugInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\PublicSymbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\CodeView.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\CodeViewPDB.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\Debug.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\ExDllCharacteristics.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\FPO.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\PDBChecksum.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\Pogo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\PogoEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\Repro.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\debug\VCFeature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\PackedFunction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\UnpackedFunction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\internal_arm64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\internal_x64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionAArch64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionX64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeAArch64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeX64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\Metadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataARM64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataX86.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixup.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64Kernel.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64X.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupControlTransfer.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupGeneric.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupUnknown.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationBase.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV1.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV2.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverride.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverrideInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveConfiguration.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveImport.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\LoadConfiguration.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations\VolatileMetadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\AcceleratorCodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\langs.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceAccelerator.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceDialog.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceDialogExtended.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceDialogRegular.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceIcon.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceStringFileInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceStringTable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceVar.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceVarFileInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\resources\ResourceVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\ContentType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\GenericType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsCounterSign.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsManifestBinaryID.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcNestedSignature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcStatementType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9AtSequenceNumber.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9CounterSignature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9MessageDigest.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9SigningTime.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\SigningCertificateV2.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\SpcRelaxedPeMarkerCheck.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes\SpcSpOpusInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\Attribute.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\attributes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\ContentInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\GenericContent.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\OIDToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\PKCS9TSTInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\RsaInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\Signature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\SignatureParser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\SignerInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\SpcIndirectData.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\signature\x509.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Binary.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Builder.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\CodeIntegrity.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\CodePage.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DataDirectory.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DataDirectory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Debug.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DelayImport.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DelayImportEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DosHeader.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\DosHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\enums.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\EnumToString.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ExceptionInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Export.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ExportEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Factory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Import.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Import.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ImportEntry.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ImportEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\LoadConfigurations.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\OptionalHeader.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\OptionalHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\RelocationEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourceData.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourceDirectory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourceNode.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\ResourcesManager.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\RichEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\RichHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Section.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\TLS.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\platforms\android\version.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\platforms\android.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\internal\expected.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\internal\span.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\expected.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\third-party\span.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\type_traits.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Abstract.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ART.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ASM.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\canbe_unique.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\COFF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\compiler_attributes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\config.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\debug_loc.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DEX.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DWARF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\DyldSharedCache.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ELF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\endianness_support.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\errors.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\iostream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\iterators.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\LIEF.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\LIEF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\logging.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\logging.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\MachO.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\OAT.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\ObjC.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Object.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\optional.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PDB.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\PE.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\platforms.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\range.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\span.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\to_json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\types.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\VDEX.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\version.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\visibility.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\Visitor.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\LIEF\include\LIEF\visitor_macros.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Generated\EnumInstructionCategory.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Generated\EnumISAExt.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Generated\EnumISASet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Generated\EnumMnemonic.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Generated\EnumRegister.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Internal\DecoderData.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Internal\EncoderData.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Internal\FormatterATT.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Internal\FormatterBase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Internal\FormatterIntel.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Internal\SharedData.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Internal\String.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Decoder.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\DecoderTypes.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Defines.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Disassembler.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Encoder.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Formatter.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\FormatterBuffer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\MetaInfo.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Mnemonic.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Register.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Segment.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\SharedTypes.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\ShortString.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Status.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Utils.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\externals\Zydis\Zydis.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Utils\Animation.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Utils\Color.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Mutation_Engine\Engine.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Animation.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Color.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Virtualization\Virtualization.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutation_Engine\Engine.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\arm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\arm64.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\evm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\hexagon.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\keystone.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\mips.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\ppc.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\sparc.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\systemz.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Keystone\include\keystone\x86.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\DebugInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\java_structures.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\Immediate.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\Memory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\PCRelative.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands\Register.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\Operand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\operands.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\Immediate.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\Memory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\PCRelative.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands\Register.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\opcodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\Operand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\operands.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86\registers.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\aarch64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\arm.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\AssemblerConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\ebpf.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\Engine.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\Instruction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\mips.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\powerpc.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\riscv.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\asm\x86.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\ASN1Reader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\BinaryStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\FileStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\MemoryStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\SpanStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\BinaryStream\VectorStream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarybfAndefSymbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryCLRToken.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryFunctionDefinition.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliarySectionDefinition.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbols\AuxiliaryWeakExternal.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\AuxiliarySymbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\BigObjHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\RegularHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\String.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Class.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\CodeInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\deopt.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Field.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\instructions.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\MapItem.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\MapList.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Prototype.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\ArrayType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\BaseType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\CompilationUnit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\EnumType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\FunctionType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\PointerType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\StructType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\TypeDef.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\editor\Variable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Array.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Atomic.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Base.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\ClassLike.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Coarray.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Const.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Dynamic.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Enum.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Immutable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Interface.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Pointer.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\PointerToMember.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Reference.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Restrict.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\RValueRef.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\SetTy.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Shared.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\StringTy.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Subroutine.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\TemplateAlias.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Thrown.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Typedef.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types\Volatile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\CompilationUnit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\DebugInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Editor.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Parameter.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Scope.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF\Variable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\caching.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\DyldSharedCache.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\Dylib.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\MappingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\SubCache.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache\uuid.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreAuxv.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreFile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrPsInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CorePrStatus.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\core\CoreSigInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64Feature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\AArch64PAuth.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Generic.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\Needed.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\NoteNoCopyOnProtected.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\StackSize.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86Feature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\properties\X86ISA.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\AndroidIdent.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\Core.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\NoteAbi.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\NoteGnuProperty.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\Properties.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails\QNXStack.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Binary.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Builder.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntry.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryArray.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryFlags.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryLibrary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryRpath.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicEntryRunPath.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\DynamicSharedObject.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\enums.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\GnuHash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Note.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\NoteDetails.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\ProcessorFlags.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Section.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Segment.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Segment.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Symbol.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionAux.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionAuxRequirement.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionDefinition.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SymbolVersionRequirement.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\SysvHash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\utils.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\AtomInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Binary.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BinaryParser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BindingInfoIterator.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Builder.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BuildToolVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\BuildVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ChainedBindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ChainedPointerAnalysis.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\CodeSignature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\CodeSignatureDir.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DataCodeEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DataInCode.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldBindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldChainedFixups.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldChainedFixupsCreator.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldChainedFormat.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldEnvironment.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldExportsTrie.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DyldInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DylibCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DylinkerCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\DynamicSymbolCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\EncryptionInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\enums.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ExportInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FatBinary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FilesetCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FunctionStarts.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FunctionVariantFixups.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\FunctionVariants.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\IndirectBindingInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LinkEdit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LinkerOptHint.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LoadCommand.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\LoadCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\MainCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\NoteCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RelocationDyld.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RelocationFixup.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RelocationObject.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Routine.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\RPathCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Section.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Segment.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SegmentCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SegmentSplitInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SourceVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Stub.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SubClient.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SubFramework.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Symbol.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\Symbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\SymbolCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\ThreadCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\TwoLevelHints.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\type_traits.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\UnknownCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\UUIDCommand.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO\VersionMin.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Class.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\DexFile.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\type_traits.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Class.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\DeclOpt.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\IVar.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Metadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Property.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC\Protocol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Array.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Attribute.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\BitField.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\ClassLike.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Enum.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Method.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Modifier.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Pointer.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Simple.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types\Union.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\BuildMetadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\CompilationUnit.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\DebugInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\Function.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\PublicSymbol.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\CodeView.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\CodeViewPDB.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\Debug.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\ExDllCharacteristics.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\FPO.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\PDBChecksum.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\Pogo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\PogoEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\Repro.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\debug\VCFeature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\PackedFunction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\AArch64\UnpackedFunction.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\internal_arm64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\internal_x64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionAArch64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\RuntimeFunctionX64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeAArch64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\exceptions_info\UnwindCodeX64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\Metadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataARM64.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata\MetadataX86.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixup.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64Kernel.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupARM64X.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupControlTransfer.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupGeneric.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicFixupUnknown.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationBase.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV1.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\DynamicRelocationV2.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverride.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation\FunctionOverrideInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\CHPEMetadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\DynamicRelocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveConfiguration.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\EnclaveImport.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\LoadConfiguration.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations\VolatileMetadata.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\AcceleratorCodes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\langs.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceAccelerator.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceDialog.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceDialogExtended.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceDialogRegular.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceIcon.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceStringFileInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceStringTable.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceVar.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceVarFileInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\resources\ResourceVersion.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\ContentType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\GenericType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsCounterSign.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsManifestBinaryID.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcNestedSignature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\MsSpcStatementType.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9AtSequenceNumber.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9CounterSignature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9MessageDigest.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\PKCS9SigningTime.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\SigningCertificateV2.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\SpcRelaxedPeMarkerCheck.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes\SpcSpOpusInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\Attribute.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\attributes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\ContentInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\GenericContent.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\OIDToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\PKCS9TSTInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\RsaInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\Signature.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\SignatureParser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\SignerInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\SpcIndirectData.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\signature\x509.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Binary.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Binary.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Builder.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\CodeIntegrity.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\CodePage.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DataDirectory.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DataDirectory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Debug.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DelayImport.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DelayImportEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DosHeader.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\DosHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\enums.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\EnumToString.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\EnumToString.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ExceptionInfo.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Export.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ExportEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Factory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Import.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Import.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ImportEntry.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ImportEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\LoadConfigurations.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\OptionalHeader.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\OptionalHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ParserConfig.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Relocation.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\RelocationEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourceData.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourceDirectory.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourceNode.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\ResourcesManager.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\RichEntry.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\RichHeader.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Section.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\Section.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\TLS.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\platforms\android\version.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\platforms\android.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\internal\expected.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\internal\span.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\expected.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\third-party\span.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\File.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\Header.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\Parser.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\type_traits.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Abstract.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ART.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ASM.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\canbe_unique.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\COFF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\compiler_attributes.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\config.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\debug_loc.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DEX.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DWARF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\DyldSharedCache.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ELF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\endianness_support.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\enums.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\errors.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\hash.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\iostream.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\iterators.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\LIEF.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\LIEF.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\logging.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\logging.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\MachO.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\OAT.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\ObjC.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Object.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\optional.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PDB.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\PE.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\platforms.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\range.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\span.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\to_json.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\types.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\utils.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\VDEX.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\version.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\visibility.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\Visitor.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\LIEF\include\LIEF\visitor_macros.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Generated\EnumInstructionCategory.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Generated\EnumISAExt.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Generated\EnumISASet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Generated\EnumMnemonic.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Generated\EnumRegister.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Internal\DecoderData.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Internal\EncoderData.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Internal\FormatterATT.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Internal\FormatterBase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Internal\FormatterIntel.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Internal\SharedData.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Internal\String.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Decoder.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\DecoderTypes.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Defines.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Disassembler.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Encoder.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Formatter.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\FormatterBuffer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\MetaInfo.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Mnemonic.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Register.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Segment.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\SharedTypes.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\ShortString.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Status.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Utils.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="externals\Zydis\Zydis.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\stub\stub.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Ctf\ctf.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\AArch64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\ARM.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\BPF.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\Hexagon.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\i386.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\LoongArch.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\Mips.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\PowerPC.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\PowerPC64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\RISCV.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\SH4.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\Sparc.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\SystemZ.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\Relocations\x86_64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\ELF\enums.inc">
+      <Filter>Headerdateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\Arm64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\PerProcess.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\SystemWide.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\MachO\FunctionVariants\X86_64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\MachO\enums.inc">
+      <Filter>Headerdateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\include\LIEF\PE\enums.inc">
+      <Filter>Headerdateien</Filter>
+    </None>
+    <None Include="core\externals\ctf.asm">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="core\externals\LIEF\lib\LIEF.dll" />
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\AArch64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\ARM.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\BPF.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\Hexagon.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\i386.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\LoongArch.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\Mips.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\PowerPC.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\PowerPC64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\RISCV.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\SH4.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\Sparc.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\SystemZ.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\Relocations\x86_64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\ELF\enums.inc">
+      <Filter>Headerdateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\Arm64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\PerProcess.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\SystemWide.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\MachO\FunctionVariants\X86_64.def">
+      <Filter>Quelldateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\MachO\enums.inc">
+      <Filter>Headerdateien</Filter>
+    </None>
+    <None Include="externals\LIEF\include\LIEF\PE\enums.inc">
+      <Filter>Headerdateien</Filter>
+    </None>
+    <None Include="externals\ctf.asm">
+      <Filter>Quelldateien</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="core\externals\LIEF\lib\LIEF.lib" />
+  </ItemGroup>
+</Project>
